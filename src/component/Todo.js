@@ -1,20 +1,15 @@
 import React from "react";
 
-export const Todo = ({}) => {
-  const todoList = [
-    {
-      id: 1,
-      dish: dosha,
-    },
-    {
-      id: 2,
-      dish: kabab,
-    },
-  ];
+const Todo = ({ todo }) => {
+  const { id, dish, completed } = todo;
+  const h1 = <h1>{dish}</h1>;
+  const paid = completed ? <strike>{dish}</strike> : h1;
 
   return (
-    <div data-testid="todo-1">
-      <h1>Todo</h1>
+    <div data-testId={`todo-${id}`}>
+      <h1>{paid}</h1>
     </div>
   );
 };
+
+export default Todo;
