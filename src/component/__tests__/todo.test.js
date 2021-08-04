@@ -37,3 +37,15 @@ test("matches snapshot", () => {
   const tree = renderer.create(<Todo todo={todo} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+test("matches second snapshot", () => {
+  const todo = { id: 2, dish: "Burger", completed: true };
+  const tree = renderer.create(<Todo todo={todo} />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+test("matches third snapshot", () => {
+  const todo = { id: 3, dish: "Sandwich", completed: true };
+  const tree = renderer.create(<Todo todo={todo} />).toJSON();
+  expect(tree).toMatchSnapshot();
+});

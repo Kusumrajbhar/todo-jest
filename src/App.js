@@ -13,6 +13,41 @@ function App() {
       dish: "Pizza",
       completed: true,
     },
+    {
+      id: 3,
+      dish: "Sandwich",
+      completed: true,
+    },
+    {
+      id: 4,
+      dish: "chicken roll",
+      completed: false,
+    },
+    {
+      id: 5,
+      dish: "Starter",
+      completed: true,
+    },
+    {
+      id: 6,
+      dish: "Coffee",
+      completed: false,
+    },
+    {
+      id: 7,
+      dish: "Tea",
+      completed: true,
+    },
+    {
+      id: 8,
+      dish: "Water",
+      completed: false,
+    },
+    {
+      id: 9,
+      dish: "Frankie",
+      completed: false,
+    },
   ];
   return (
     <div className="App">

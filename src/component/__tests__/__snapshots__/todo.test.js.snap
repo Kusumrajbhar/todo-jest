@@ -1,5 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`matches second snapshot 1`] = `
+<div
+  data-testId="todo-2"
+>
+  <h1>
+    <strike>
+      Burger
+    </strike>
+  </h1>
+</div>
+`;
+
 exports[`matches snapshot 1`] = `
 <div
   data-testId="todo-1"
@@ -8,6 +20,18 @@ exports[`matches snapshot 1`] = `
     <h1>
       Pizza
     </h1>
+  </h1>
+</div>
+`;
+
+exports[`matches third snapshot 1`] = `
+<div
+  data-testId="todo-3"
+>
+  <h1>
+    <strike>
+      Sandwich
+    </strike>
   </h1>
 </div>
 `;
