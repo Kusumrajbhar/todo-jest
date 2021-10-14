@@ -1,4 +1,5 @@
 import "./App.css";
+import LoginForm from "./component/LoginForm";
 import Todo from "./component/Todo";
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
   ];
   return (
     <div className="App">
+      <LoginForm submit={(values) => alert(JSON.stringify(values))} />
       {todoList.map((todo, index) => {
         return (
           <p key={index}>
